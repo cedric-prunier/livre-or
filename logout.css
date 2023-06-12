@@ -1,0 +1,66 @@
+@font-face {
+        font-family: "poppins-semibold";
+        src: url(./poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+        font-family: "poppins-light";
+        src: url(./poppins/Poppins-Light.ttf);
+}
+@font-face {
+        font-family: "poppins-bold";
+        src: url(./poppins/Poppins-Bold.ttf);
+}
+body {
+        background-image: url(./images/background.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        font-family: "poppins";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+div {
+        background-color: rgba(255, 255, 255, 0.629);
+        backdrop-filter: blur(7px);
+        padding: 100px;
+        text-align: center;
+}
+h1 {
+        font-family: "poppins-semibold";
+        font-size: 3rem;
+}
+p {
+        font-family: "poppins-light";
+        font-size: 2rem;
+}
+input {
+        font-family: "poppins-bold";
+        font-size: 1.5rem;
+        padding: 20px 30px;
+        background-color: transparent;
+        border-radius: 150px;
+        margin: 20px;
+        border: 2px solid white;
+        transition: 0.3s;
+}
+button {
+        font-family: "poppins-bold";
+        font-size: 1.5rem;
+        padding: 20px 30px;
+        background-color: transparent;
+        border-radius: 150px;
+        margin: 20px;
+        border: 2px solid white;
+        transition: 0.3s;
+}
+input:hover {
+        transform: scale(1.1);
+        background-color: rgb(46, 164, 248);
+        color: white;
+}
+button:hover {
+        transform: scale(1.1);
+        background-color: rgb(248, 63, 46);
+        color: white;
+}
