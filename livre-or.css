@@ -75,7 +75,7 @@
                 position: absolute;
                 flex-direction: column;
                 justify-content: center;
-                width: 40vw;
+                width: 50vw;
                 height: 100vh;
                 top: 0;
                 left: 0;
@@ -84,9 +84,11 @@
                 align-items: center;
                 margin-left: -100%;
                 transition: 0.5s;
+                text-align: center;
                 border-right: 2px solid rgb(208, 165, 57);
         }
-        .navlinks li {
+        .navbar .navlinks li {
+                padding: 0;
                 margin: 20px 0;
                 width: 100%;
                 text-align: center;
@@ -198,12 +200,16 @@ td {
         border: 2px solid black;
         color: black;
 }
-a {
+section a {
         font-size: 1.5rem;
         color: rgb(208, 165, 57);
         background-color: white;
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
+        transition: 0.5s;
+}
+#lien:hover {
+        border: 2px solid rgb(208, 165, 57);
 }
 @media screen and (max-width: 900px) {
         h1 {

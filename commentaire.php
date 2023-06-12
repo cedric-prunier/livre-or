@@ -99,5 +99,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </section>
 </body>
+<script>
+    const burger = document.querySelector(".burger");
+    const navlinks = document.querySelector(".navlinks");
+    burger.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+    });
+</script>
+<script>
+    const menuburger = document.querySelector(".burger");
+
+    menuburger.addEventListener("click", () => {
+        menuburger.classList.toggle("cross");
+    });
+</script>
+<script>
+    const body = document.querySelector("body");
+
+    body.addEventListener("click", (e) => {
+        if (e.target !== user && e.target !== login && !login.contains(e.target)) {
+            if (login.classList.contains("loginok")) {
+                login.classList.remove("loginok");
+            }
+        }
+    });
+</script>
 
 </html>

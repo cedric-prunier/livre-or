@@ -72,7 +72,7 @@ body {
                 position: absolute;
                 flex-direction: column;
                 justify-content: center;
-                width: 30vw;
+                width: 50vw;
                 height: 100vh;
                 top: 0;
                 left: 0;
@@ -91,6 +91,7 @@ body {
         .navbar .navlinks li a {
                 font-size: 1.4rem;
                 color: rgb(208, 165, 57);
+                padding: 20px;
         }
         .navbar .navlinks li a::after {
                 columns: #fff;

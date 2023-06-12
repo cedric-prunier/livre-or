@@ -21,7 +21,7 @@
                                 // Utilisateur connecté
                                 echo 'Bonjour, ' . $_SESSION['login'];
                                 echo '<li class="projet"><a href="index.php">Accueil</a></li>';
-                                echo '<li class="projet"><a href="livre-or.php">livre Or </a></li>';
+                                echo '<li class="projet"><a href="livre-or.php">Livre Or </a></li>';
                                 echo '<li class="projet"><a href="commentaire.php">Commentaire</a></li>';
                                 echo '<li class="projet"><a href="profil.php">Profil</a></li>';
                                 echo '<li><a href="logout.php">Déconnexion</a></li>';

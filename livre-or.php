@@ -99,7 +99,7 @@
             <?php
             echo '<br>';
             if (isset($_SESSION["connected"]) && $_SESSION["connected"] === true): ?>
-                <a href="commentaire.php">Ajouter un commentaire</a>
+                <a id="lien" href="commentaire.php">Ajouter un commentaire</a>
             <?php endif; ?>
         </article>
     </section>
