@@ -38,7 +38,7 @@
 
             } else {
                 // Aucun utilisateur connecté
-                echo '<li class="projet"><a href="livre-or.php">livre Or </a></li>';
+                echo '<li class="projet"><a href="index.php">Accueil</a></li>';
                 echo '<li class="projet"><a href="inscription.php">Inscription</a></li>';
                 echo '<li class="projet"><a href="connexion.php">Connexion</a></li>';
             }

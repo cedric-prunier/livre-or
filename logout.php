@@ -30,7 +30,7 @@ if (isset($_POST['logout'])) {
         <p>Êtes-vous sûr de vouloir fermer votre session ?</p>
         <form action="logout.php" method="post">
             <input type="submit" name="logout" value="Déconnexion">
-            <button type="button" onclick="window.history.back();">Annuler</button>
+            <button type="button" onclick="window.location.href = 'index.php';">Annuler</button>
         </form>
     </div>
 </body>
