@@ -12,13 +12,9 @@
 <body>
     <section>
         <form class="formulaire" action="" method="post">
-            <img src="./images/logo_laplateforme.png" alt="logo laplateforme" />
+            <h1>Récupérer votre mot de passe</h1>
             <br>
-            <h1>Récupération du mot de passe</h1>
-            <br>
-            <input type="text" name="nom" placeholder="Entrez votre nom">
-            <br>
-            <input type="text" name="prenom" placeholder="Entrez votre prénom">
+            <h2>Identifiant</h2>
             <br>
             <input type="text" name="login" placeholder="Entrez votre login">
             <br>
@@ -53,14 +49,17 @@
                     if ($result->num_rows > 0) {
                         // L'utilisateur existe dans la base de données
                         echo '<br>';
-                        echo "Nouveau mot de passe";
+                        echo "<h2>Nouveau mot de passe</h2>";
                         echo '<br>';
                         // Afficher les champs pour le nouveau mot de passe
                         echo '<form class="formulaire" action="" method="post">';
                         echo '<input type="hidden" name="login" value="' . $login . '">';
-                        echo '<input type="password" name="new_password" placeholder="Nouveau mot de passe" required>';
+                        echo '<input type="password" name="new_password" id="new_password" placeholder="Nouveau mot de passe" required>';
                         echo '<br>';
-                        echo '<input type="password" name="confirm_password" placeholder="Confirmer le nouveau mot de passe" required>';
+                        echo '<input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmer le nouveau mot de passe" required>';
+                        echo '<br>';
+                        echo '<button class="eye" type="button" onclick="togglePassword()" id="toggle-password"><img
+                        src="./images/eye-open.svg" alt="eye" height="30" /></button>';
                         echo '<br>';
                         echo '<input class="options" type="submit" name="submit_reset" value="Réinitialiser le mot de passe">';
                         echo '</form>';
@@ -99,5 +98,24 @@
         </form>
     </section>
 </body>
+<script>
+    function togglePassword() {
+        const newPasswordInput = document.getElementById("new_password");
+        const confirmPasswordInput = document.getElementById("confirm_password");
+        const togglePasswordButton = document.getElementById("toggle-password");
+        const img = togglePasswordButton.querySelector("img");
+
+        if (newPasswordInput.type === "password" && confirmPasswordInput.type === "password") {
+            newPasswordInput.type = "text";
+            confirmPasswordInput.type = "text";
+            img.src = "./images/eye-closed.svg";
+        } else {
+            newPasswordInput.type = "password";
+            confirmPasswordInput.type = "password";
+            img.src = "./images/eye-open.svg";
+        }
+    }
+</script>
+
 
 </html>

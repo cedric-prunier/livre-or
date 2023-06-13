@@ -19,23 +19,28 @@ body {
         min-height: 100vh;
         font-family: "poppins";
         font-size: 1rem;
+        text-align: center;
 }
 section {
+        background-image: url(./images/wedding2.jpg);
+        background-size: cover;
         width: 100vw;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         position: relative;
 }
+
 h1 {
         font-size: 2rem;
         text-align: center;
+        color: white;
 }
 
 .formulaire {
         position: absolute;
-        background: #181c1f84;
         backdrop-filter: blur(3px);
+        background-color: #ffffff3d;
         width: 70%;
         height: 100%;
         padding: 50px;
@@ -46,29 +51,36 @@ h1 {
         align-items: center;
 }
 img {
-        width: 50%;
+        height: 30px;
+        width: 30px;
 }
 input {
         outline: none;
-        border-radius: 5px;
-        border: 2px solid rgba(13, 144, 231, 0.476);
+        background-color: #fff;
+        border: 2px solid white;
         color: black;
         padding: 10px 20px;
         margin: 0 30px;
         min-width: 50%;
         font-size: 1rem;
 }
-
+.eye {
+        background-color: transparent;
+        border: none;
+        filter: invert(100%);
+}
 .options {
-        background: none;
-        padding: 10px;
-        border-radius: 150px;
-        border: 3px solid #fff;
-        color: #fff;
-        transition: 0.5s;
+        font-size: 1rem;
+        color: rgb(208, 165, 57);
+        background-color: rgb(255, 255, 255);
+        border: 2px solidrgb(208, 165, 57);
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.3s;
 }
 .options:hover {
-        background: linear-gradient(to right, rgb(11, 93, 128), rgb(255, 255, 255));
+        background-color: rgb(208, 165, 57);
+        color: white;
         transform: scale(1.1);
 }
 ::placeholder {
@@ -78,6 +90,12 @@ input {
 @media screen and (max-width: 900px) {
         form {
                 display: flex;
+        }
+        h1 {
+                font-size: 1.5rem;
+        }
+        h2 {
+                font-size: 1rem;
         }
         .formulaire {
                 position: absolute;
