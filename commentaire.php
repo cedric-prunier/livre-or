@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form class="formulaire" action="commentaire.php" method="post">
             <h1>Ajouter un commentaire</h1>
 
-            <label for="commentaire">Laissez l'empreinte de votre amour</label>
+            <label for="commentaire">Laisser l'empreinte de votre amour</label>
             <br>
             <textarea name="commentaire" id="commentaire" cols="30" rows="5" placeholder="Entrez votre commentaire"
                 required></textarea>

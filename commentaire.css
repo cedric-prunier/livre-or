@@ -164,6 +164,8 @@ body {
 }
 
 section {
+        background-image: url(./images/petales.jpg);
+        background-size: cover;
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -187,6 +189,10 @@ label {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 60%;
+        height: 60%;
+        background-color: #ffffffc3;
+        backdrop-filter: blur(7px);
 }
 input {
         color: rgb(208, 165, 57);
@@ -194,9 +200,5 @@ input {
         border: 2px solid black;
         padding: 30px;
         font-size: 2rem;
-}
-@media screen and (max-width: 600px) {
-        .formulaire {
-                width: 80%;
-        }
+        outline: none;
 }
