@@ -10,13 +10,12 @@
         list-style: none;
         box-sizing: border-box;
 }
-header {
+
+body {
         background: url(./images/wallpaper.jpg);
         background-size: cover;
         width: 100vw;
         height: 100vh;
-}
-body {
         font-family: "billa";
 }
 
@@ -81,6 +80,7 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 width: 50vw;
+                padding: 50px;
                 height: 100vh;
                 top: 0;
                 left: 0;
@@ -92,9 +92,11 @@ body {
                 border-right: 2px solid rgb(208, 165, 57);
         }
         .navlinks li {
-                margin: 20px 0;
                 width: 100%;
                 text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
         }
         .navbar .navlinks li a {
                 font-size: 1.4rem;

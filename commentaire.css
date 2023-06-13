@@ -16,6 +16,7 @@ body {
 /* Nabar */
 .navbar {
         position: absolute;
+        z-index: 999;
         display: flex;
         width: 100vw;
         background-color: #ffffff;
@@ -41,11 +42,10 @@ body {
 }
 
 .navbar .navlinks li a {
-        margin: 0 20px;
+        margin: 20px;
         position: relative;
         color: #000000;
         font-size: 1.2rem;
-
         font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -69,10 +69,12 @@ body {
                 padding: 30px;
         }
         .navlinks {
+                z-index: 999;
                 position: absolute;
                 flex-direction: column;
                 justify-content: center;
                 width: 50vw;
+                padding: 50px;
                 height: 100vh;
                 top: 0;
                 left: 0;
@@ -84,9 +86,11 @@ body {
                 border-right: 2px solid rgb(208, 165, 57);
         }
         .navlinks li {
-                margin: 30px 0;
                 width: 100%;
                 text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
         }
         .navbar .navlinks li a {
                 font-size: 1.4rem;
@@ -97,11 +101,7 @@ body {
                 columns: #fff;
         }
 }
-@media screen and (max-width: 600px) {
-        .navlinks a {
-                font-size: 1rem;
-        }
-}
+
 /* Menu-Burger */
 .burger {
         position: absolute;
@@ -162,6 +162,7 @@ body {
                 margin-left: 0;
         }
 }
+
 section {
         width: 100vw;
         height: 100vh;
@@ -174,8 +175,20 @@ section {
 h1 {
         font-size: 3rem;
 }
+label {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5rem;
+        color: rgb(208, 165, 57);
+}
 .formulaire {
         display: flex;
         flex-direction: column;
         justify-content: center;
+}
+input {
+        color: rgb(208, 165, 57);
+        background-color: black;
+        border: 2px solid black;
+        padding: 30px;
+        font-size: 2rem;
 }
