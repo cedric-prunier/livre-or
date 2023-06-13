@@ -86,6 +86,7 @@ body {
         color: rgb(208, 165, 57);
         background-color: rgb(255, 255, 255);
         padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
 }
 
 .login .input-text {
@@ -113,7 +114,10 @@ body {
         background-color: transparent;
         border: none;
         height: 15px;
-        padding: 0 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         filter: invert(100%);
 }
 .login .identifiant {
@@ -124,6 +128,7 @@ body {
         font-size: 15px;
         padding: 5px;
 }
+
 ::placeholder {
         color: rgb(208, 165, 57);
         background-color: white;
