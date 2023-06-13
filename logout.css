@@ -42,7 +42,7 @@ input {
         background-color: transparent;
         border-radius: 150px;
         margin: 20px;
-        border: 2px solid white;
+        border: 2px solid rgb(0, 0, 0);
         transition: 0.3s;
 }
 button {
@@ -52,7 +52,7 @@ button {
         background-color: transparent;
         border-radius: 150px;
         margin: 20px;
-        border: 2px solid white;
+        border: 2px solid rgb(0, 0, 0);
         transition: 0.3s;
 }
 input:hover {
