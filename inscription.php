@@ -72,9 +72,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
                         <h1>Formulaire d'inscription</h1>
-                        <input type="text" id="login" name="login" placeholder="Entrez votre identifiant" required />
+                        <input type="text" id="login" name="login" placeholder="Entrer votre identifiant" required />
                         <label for="password">Mot de passe</label>
-                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe"
+                        <input type="password" id="password" name="password" placeholder="Entrer votre mot de passe"
                                 required />
                         <label for="password_check">Confirmer MDP</label>
                         <input type="password" id="password_check" name="password_check" placeholder="Confirmer MDP"
