@@ -92,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <label for="commentaire">Laissez l'empreinte de votre amour</label>
             <br>
-            <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="Entrez votre commentaire"
+            <textarea name="commentaire" id="commentaire" cols="30" rows="5" placeholder="Entrez votre commentaire"
                 required></textarea>
             <br>
             <input type="submit" name="valider" value="Valider">
