@@ -90,7 +90,9 @@ body {
                 margin-left: -100%;
                 transition: 0.5s;
                 border-right: 2px solid rgb(208, 165, 57);
+                text-align: center;
         }
+
         .navlinks li {
                 width: 100%;
                 text-align: center;

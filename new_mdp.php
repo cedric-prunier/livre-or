@@ -31,7 +31,7 @@
             $servername = "localhost";
             $username = "root";
             $password = "root";
-            $dbname = "moduleconnexion";
+            $dbname = "livreor";
 
             $conn = new mysqli($servername, $username, $password, $dbname);
 
