@@ -16,7 +16,7 @@
             <br>
             <h2>Identifiant</h2>
             <br>
-            <input type="text" name="login" placeholder="Entrez votre login">
+            <input type="text" name="login" placeholder="Entrer votre login">
             <br>
             <input class="options" type="submit" name="submit_request" value="Vérifier profil utilisateur">
 
