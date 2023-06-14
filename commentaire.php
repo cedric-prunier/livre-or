@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <section>
+    <section class="section">
         <form class="formulaire" action="commentaire.php" method="post">
             <h1>Ajouter un commentaire</h1>
 
