@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <title>Ajouter un commentaire</title>
-    <link rel="stylesheet" href="commentaire.css">
+    <link rel="stylesheet" href="profil.css">
 </head>
 
 <body>
@@ -86,18 +86,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </nav>
 
-    <section class="section">
-        <form class="formulaire" action="commentaire.php" method="post">
-            <h1>Ajouter un commentaire</h1>
+    <form class="formulaire" action="commentaire.php" method="post">
+        <h1>Ajouter un commentaire</h1>
 
-            <label for="commentaire">Laisser l'empreinte de votre amour</label>
-            <br>
-            <textarea name="commentaire" id="commentaire" cols="30" rows="5" placeholder="Entrez votre commentaire"
-                required></textarea>
-            <br>
-            <input type="submit" name="valider" value="Valider">
-        </form>
-    </section>
+        <label for="commentaire">Laisser l'empreinte de votre amour</label>
+        <br>
+        <textarea name="commentaire" id="commentaire" cols="30" rows="5" placeholder="Entrez votre commentaire"
+            required></textarea>
+        <br>
+        <input type="submit" name="valider" value="Valider">
+    </form>
+
 </body>
 <script>
     const burger = document.querySelector(".burger");

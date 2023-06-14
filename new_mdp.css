@@ -12,15 +12,6 @@
         box-sizing: border-box;
 }
 
-body {
-        background-image: url(./images/background.jpg);
-        background-size: cover;
-        width: 100vw;
-        min-height: 100vh;
-        font-family: "poppins";
-        font-size: 1rem;
-        text-align: center;
-}
 section {
         background-image: url(./images/wedding2.jpg);
         background-size: cover;

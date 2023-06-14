@@ -12,6 +12,10 @@
 }
 
 body {
+        background: url(./images/wallpaper.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
         font-family: "billa";
 }
 
@@ -26,6 +30,11 @@ body {
         align-items: center;
         padding: 10px 30px;
         border-bottom: 2px solid rgb(208, 165, 57);
+}
+
+.navbar .logo {
+        display: flex;
+        align-items: center;
 }
 
 .navbar .navlinks {
@@ -160,44 +169,4 @@ body {
         .mobile-menu {
                 margin-left: 0;
         }
-}
-
-.section {
-        background-image: url(./images/petales.jpg);
-        background-size: cover;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 10px;
-}
-.section h1 {
-        font-size: 3rem;
-        line-height: 1;
-        padding-bottom: 50px;
-}
-.section label {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.5rem;
-        color: rgb(208, 165, 57);
-}
-.formulaire {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 60%;
-        height: 60%;
-        background-color: #ffffffc3;
-        backdrop-filter: blur(7px);
-}
-.section input {
-        color: rgb(208, 165, 57);
-        background-color: black;
-        border: 2px solid black;
-        padding: 30px;
-        font-size: 2rem;
-        outline: none;
 }
