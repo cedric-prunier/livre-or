@@ -97,18 +97,13 @@ $conn->close();
     </nav>
     <section class="section">
         <form class="formulaire" action="profil.php" method="post">
-            <h1>Livre d'Or</h1>
-            <br>
-            <h2>Modifier votre profil</h2>
 
+            <h1>Modifier votre profil</h1>
             <br />
-
             <label for="login">Login</label>
             <br>
             <input type="text" id="login" name="login" value="<?php echo $login; ?>" required>
-
             <br />
-
             <label for="password">Mot de passe</label>
             <br>
             <input type="password" id="password" name="password" value="<?php echo $password; ?>" required>
