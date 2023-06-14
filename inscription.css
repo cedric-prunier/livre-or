@@ -110,12 +110,14 @@ body {
         right: 20px;
 }
 
-.login .eye {
+.eye {
         background-color: transparent;
         border: none;
         height: 15px;
-        padding: 0 10px;
-        filter: invert(100%);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .login .identifiant {
         display: flex;

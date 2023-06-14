@@ -2,7 +2,6 @@
 // Vérifier si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Récupérer les valeurs du formulaire
-
         $login = isset($_POST['login']) ? $_POST['login'] : '';
         $form_password = isset($_POST['password']) ? $_POST['password'] : '';
         $password_check = isset($_POST['password_check']) ? $_POST['password_check'] : '';
@@ -69,8 +68,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
         <section>
                 <form class="login" action="inscription.php" method="post">
-
-
                         <h1>Formulaire d'inscription</h1>
                         <input type="text" id="login" name="login" placeholder="Entrer votre identifiant" required />
                         <label for="password">Mot de passe</label>
@@ -79,13 +76,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <label for="password_check">Confirmer MDP</label>
                         <input type="password" id="password_check" name="password_check" placeholder="Confirmer MDP"
                                 required />
+                        <button class="eye" type="button" onclick="togglePassword()" id="toggle-password"><img
+                                        src="./images/eye-open.svg" alt="eye" height="30" /></button>
                         <li class="options">
                                 <input type="submit" name="valider" value="Valider &#10004;" />
                                 <input type="reset" name="reset" value="Effacer &#10005;" />
                         </li>
-
                 </form>
         </section>
 </body>
+<script>
+        function togglePassword() {
+                const passwordInput = document.getElementById("password");
+                const passwordCheckInput = document.getElementById("password_check");
+                const togglePasswordButton = document.getElementById("toggle-password");
+                const img = togglePasswordButton.querySelector("img");
+
+                if (passwordInput.type === "password") {
+                        passwordInput.type = "text";
+                        passwordCheckInput.type = "text";
+                        img.src = "./images/eye-closed.svg";
+                } else {
+                        passwordInput.type = "password";
+                        passwordCheckInput.type = "password";
+                        img.src = "./images/eye-open.svg";
+                }
+        }
+</script>
 
 </html>
