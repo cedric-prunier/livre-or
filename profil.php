@@ -95,28 +95,25 @@ $conn->close();
             <span></span>
         </div>
     </nav>
-    <section class="section">
-        <form class="formulaire" action="profil.php" method="post">
 
-            <h1>Modifier votre profil</h1>
-            <br />
-            <label for="login">Login</label>
-            <br>
-            <input type="text" id="login" name="login" value="<?php echo $login; ?>" required>
-            <br />
-            <label for="password">Mot de passe</label>
-            <br>
-            <input type="password" id="password" name="password" value="<?php echo $password; ?>" required>
-            <button class="eye" type="button" onclick="togglePassword()" id="toggle-password"><img
-                    src="./images/eye-open.svg" alt="" /></button>
-            <br />
-            <li class="options">
-                <input type="submit" name="valider" value="Valider &#10004;" />
-                <br />
-            </li>
+    <form class="formulaire" action="profil.php" method="post">
 
-        </form>
-    </section>
+        <h1>Modifier votre profil</h1>
+        <br>
+        <label for="login">Login</label>
+
+        <input type="text" id="login" name="login" value="<?php echo $login; ?>" required>
+        <label for="password">Mot de passe</label>
+
+        <input type="password" id="password" name="password" value="<?php echo $password; ?>" required>
+        <button class="eye" type="button" onclick="togglePassword()" id="toggle-password"><img
+                src="./images/eye-open.svg" alt="" /></button>
+
+
+        <input type="submit" name="valider" value="Valider &#10004;" />
+
+    </form>
+
 </body>
 <script>
     const burger = document.querySelector(".burger");
