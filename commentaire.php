@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <head>
     <title>Ajouter un commentaire</title>
-    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="commentaire.css">
 </head>
 
 <body>
