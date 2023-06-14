@@ -40,9 +40,6 @@
         </nav>
 
 
-
-        <header></header>
-
 </body>
 
 <script>
