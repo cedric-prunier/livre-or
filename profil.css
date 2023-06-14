@@ -166,7 +166,7 @@ body {
         }
 }
 
-section {
+.section {
         background-image: url(./images/coeur.jpg);
         background-size: cover;
         min-width: 100vw;

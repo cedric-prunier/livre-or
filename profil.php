@@ -95,7 +95,7 @@ $conn->close();
             <span></span>
         </div>
     </nav>
-    <section>
+    <section class="section">
         <form class="formulaire" action="profil.php" method="post">
             <h1>Livre d'Or</h1>
             <br>
