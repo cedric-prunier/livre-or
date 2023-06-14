@@ -28,11 +28,6 @@
         border-bottom: 2px solid rgb(208, 165, 57);
 }
 
-.navbar .logo {
-        display: flex;
-        align-items: center;
-}
-
 .navbar .navlinks {
         display: flex;
         align-items: center;

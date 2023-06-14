@@ -36,9 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bind_param("si", $commentaire, $id_utilisateur);
 
         if ($stmt->execute()) {
-            echo "Commentaire ajouté avec succès.";
+            $message = "Commentaire ajouté avec succès.";
         } else {
-            echo "Erreur lors de l'ajout du commentaire : " . $stmt->error;
+            $message = "Erreur lors de l'ajout du commentaire : " . $stmt->error;
         }
 
         // Fermeture de la connexion à la base de données
@@ -51,11 +51,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Ajouter un commentaire</title>
-    <link rel="stylesheet" href="commentaire.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commentaire</title>
+    <link rel="stylesheet" href="commentaire.css" />
+    <link rel="shortcut icon" href="./images/shortcut_icon.png" />
 </head>
 
 <body>
@@ -63,6 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <ul class="navlinks">
             <?php
+
 
             if (isset($_SESSION['login'])) {
                 // Utilisateur connecté
@@ -75,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             } else {
                 // Aucun utilisateur connecté
-                echo '<li class="projet"><a href="livre-or.php">livre Or </a></li>';
+                echo '<li class="projet"><a href="livre-or.php">Livre d\'Or</a></li>';
                 echo '<li class="projet"><a href="inscription.php">Inscription</a></li>';
                 echo '<li class="projet"><a href="connexion.php">Connexion</a></li>';
             }
@@ -85,19 +90,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <span></span>
         </div>
     </nav>
-
     <form class="formulaire" action="commentaire.php" method="post">
         <h1>Ajouter un commentaire</h1>
-
-        <label for="commentaire">Laisser l'empreinte de votre amour</label>
+        <h2>Laisser l'empreinte de votre amour</h2>
+        <?php if (isset($message)) { ?>
+            <p>
+                <?php echo $message; ?>
+            </p>
+        <?php } ?>
         <br>
-        <textarea name="commentaire" id="commentaire" cols="30" rows="5" placeholder="Entrez votre commentaire"
-            required></textarea>
-        <br>
-        <input type="submit" name="valider" value="Valider">
+        <textarea name="commentaire" id="commentaire" cols="30" rows="10"
+            placeholder="Saisir votre commentaire"></textarea>
+        <input type="submit" name="valider" id="valider">
     </form>
 
+
 </body>
+
 <script>
     const burger = document.querySelector(".burger");
     const navlinks = document.querySelector(".navlinks");
@@ -115,5 +124,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     });
 </script>
+
 
 </html>
